@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>רכישת כרטיס</title>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body>
+    <form action="/thanks.html" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full name:</label><br />
+        <input type="text" id="name" name="name" required minlength="2"/><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required/><br /><br />
+
+        <label for="phone">Phone</label><br />
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{9,10}"/><br><br>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Ticket & Workshops</legend>
+        <label for="ticketType">Ticket type:</label><br />
+
+       <select id="ticketType" name="ticketType" required>
+        <option value="">Choose ticket</option>
+       <option value="standard">Standard</option>
+       <option value="student">Student</option>
+       <option value="vip">VIP</option>
+       </select><br><br>
+        
+
+        <legend>Workshops</legend>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1">Web Performance</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2">Accessibility</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3">Testing</label><br /><br />
+
+        <legend>Diet</legend>
+        <input type="radio" id="none" name="diet" value="none" required/>
+        <label for="none">None</label><br>
+        <input type="radio" id="vegan" name="diet" value="vegan" />
+        <label for="vegan">Vegan</label><br />
+        <input type="radio" id="kosher" name="diet" value="kosher" />
+        <label for="kosher">Kosher</label><br />
+        <input type="radio" id="halal" name="diet" value="halal" />
+        <label for="halal">Halal</label><br />
+        <input type="radio" id="other" name="diet" value="other" />
+        <label for="other">Other</label><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Details</legend>
+        <label for="cardNumber">Card number:</label><br />
+        <input type="text" id="cardNumber" name="cardNumber" required pattern="[0-9 ]{13,19}"/><br /><br />
+
+        <label for="expiry">Expiry date:</label><br />
+        <input type="month" id="expiry" name="expiry" required/><br /><br />
+
+        <label for="cvv"> CVV:</label><br />
+        <input type="password" id="cvv" name="cvv" required  pattern="[0-9]{3,4}"/><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Agreements</legend>
+        <label for="studentID">Student ID card :</label><br />
+        <input type="file" id="studentID" name="IDcard" required/><br /><br />
+
+        <input type="submit" value="send" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+.father {
+    background-color: #ffeb3b;
+    width: 700px;            
+    height: 200px;            
+    border-radius: 30px;      
+    padding: 20px; 
+    
+}
+
+
+
+
+
+.child1 {
+    background-color: #4a12e4;
+    width: 170px;            
+    height: 130px;            
+    border-radius: 30px;      
+    padding: 20px;  
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 180px;
+
+    
+}
+
+
+
+.child2 {
+    background-color: #dd151f;
+    width: 250px;            
+    height: 15px;            
+    border-radius: 10px;      
+    padding: 20px;  
+    display: inline-block;
+    margin-bottom: 1px;
+    margin-left: 15px;
+}

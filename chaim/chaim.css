@@ -1,0 +1,48 @@
+.title {
+    font-size: 61px;        /* הגודל שרצית */
+    font-weight: 900;       /* הכי מודגש שיש */
+    text-align: center;     /* ממורכז מושלם */
+    color: hsl(0, 59%, 41%);
+    margin-top: 40px;       /* קצת רווח מלמעלה */
+    margin-bottom: 20px;    /* רווח בין הכותרת לסיפור */
+    width: 100%;            /* תופס את כל הרוחב כדי שהמירכוז יעבוד */
+}
+
+
+
+.aaa { 
+    margin-right: 20%;
+    border-radius: 150px
+}
+
+
+.story {
+    font-size: 20px;        
+    line-height: 1.8;        
+    font-weight: 500;        
+    max-width: 800px;     
+    margin: 0 auto;        
+    color: #333333;          
+    text-align: right;      
+    padding: 0 20px;         
+}
+
+
+
+.story-title {
+    text-align: right;    
+    margin-bottom: 10px; 
+}
+
+
+.story-title a {
+    color: #b80e0e;      
+    text-decoration: underline;
+    font-weight: bold;    
+    font-size: 50px;     
+}
+
+
+.story-title a:visited {
+    color: #c0402f;
+}

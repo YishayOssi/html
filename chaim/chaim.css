@@ -11,7 +11,7 @@
 
 
 .aaa { 
-    margin-right: 20%;
+    margin-right: 80px;
     border-radius: 150px
 }
 
@@ -29,20 +29,33 @@
 
 
 
-.story-title {
+.link1 {
     text-align: right;    
     margin-bottom: 10px; 
 }
 
 
-.story-title a {
+.link1 a {
     color: #b80e0e;      
     text-decoration: underline;
     font-weight: bold;    
-    font-size: 50px;     
+    font-size: 30px;     
 }
 
-
-.story-title a:visited {
-    color: #c0402f;
+.my-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;           /* רווח יפה בין הסרטונים */
+    justify-content: center;
+    padding: 10px;
+    background-color: white; /* רקע לבן נקי לעמוד */
 }
+
+.my-grid video, .my-grid img {
+    width: calc(50% - 10px); /* תופס חצי מהרוחב פחות הרווח */
+    height: auto;            /* הגובה נקבע לבד לפי הסרטון - מבטל שוליים שחורים! */
+    border-radius: 20px;     /* פינות מעוגלות כמו שביקשת */
+    object-fit: contain;     /* מבטיח שרואים את כל התמונה */
+    /* הסרנו את ה-background: black */
+}
+
